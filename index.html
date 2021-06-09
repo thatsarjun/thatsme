@@ -54,7 +54,7 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
     var clickTracker = data.click({widget_id:"sample_widget_id"}); // Function, you can call clickTracker() to send click stats for a campaign back to MoEngage. Call this when the user clicks on the desired section of the website. Passing widget_id is not mandatory and should only be used in case you want to differentiate the clicks between 2 different widgets of the Web Personalization Campaign.
 
     let new_color = payload.color;
-    let content_1 = document.querySelectorAll("h1");
+    let content_1 = document.querySelectorAll("h1")[0];
     console.log("color+content", new_color, content_1);
 
   });
