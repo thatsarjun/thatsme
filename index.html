@@ -56,9 +56,9 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
 
     impTracker();
     let new_color = (payload.color).toLowerCase();
-    let content_1 = document.querySelectorAll("h1")[0];
+    let content_1 = this.querySelectorAll("h1")[0];
     content_1.style.color = new_color;
-    content_1.innerText = payload.text
+    content_1.innerText = payload.text;
 
 
     content_1.addEventListener("click", ()=>{
